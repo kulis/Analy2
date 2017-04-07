@@ -208,7 +208,7 @@ function _Analy(dom,p,getData){
 				// 循环项数据
 				var $d=[],td=[],opdx={},itemsOut=false;
 				for(var x in p.d){
-					var pdx = p.d[x],isArr=false,isDel=false;
+					var pdx = p.d[x],isArr=false,emptyIsDel=false;
 
 					if(pdx.add){
 					// 系统或自建值
@@ -270,24 +270,25 @@ function _Analy(dom,p,getData){
 						if(pdx.arr_item_sort)td = _.arrSort(td,pdx.arr_item_sort);
 						
 						// 判断空值或不存储
-						if(pdx.del_empty_arr&&td.length == 0)isDel = true;
+						if(pdx.del_empty_arr&&td.length == 0)emptyIsDel = true;
 					}else{
 						td = _valPro(td.join(pdx.fg||''),pdx);
 						
 						// 判断空值或不存储
-						if(pdx.del_empty&&_.isEmpty(td))isDel = true;
+						if(pdx.del_empty&&_.isEmpty(td))emptyIsDel = true;
 					}
 					
 					console.log(td)
 
-					// 存储
-					if(!isDel&&!pdx.del)t[pdx.id] = td;
-					
 					// Out(过滤)
 					if(pdx.out){
 						// ... 引入函数？
 						itemsOut = _itemsOut(td);
 					}
+
+					// 存储
+					if(!emptyIsDel&&!pdx.del)t[pdx.id] = td;
+					
 					
 					// 记录上一级的配置
 					opdx = p.d[x];
@@ -333,9 +334,10 @@ function _Analy(dom,p,getData){
 						t[pdx.id] = _add(pdx,i);
 						continue;
 					}
-					
 					var	td = _valJson(d,pdx);
-					if(!pdx.del)t[pdx.id] = td;
+					var emptyIsDel = false;
+					if(pdx.del_empty&&_.isEmpty(td))emptyIsDel = true;
+					if(!pdx.del&&!emptyIsDel)t[pdx.id] = td;
 				}
 				
 			r.items.push(t)
