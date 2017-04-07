@@ -131,6 +131,8 @@ function _Analy(dom,p,getData){
 		var data;
 		
 		// 获取数据
+
+		// 继续改进！！！！！！！
 		var data = _.object(d,pdx.dom||[pdx.id]);
 		
 		if(data!==undefined){

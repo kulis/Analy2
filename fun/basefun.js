@@ -110,10 +110,12 @@ var _={
 	//*****************************************************************
 	object:function(d,k){// 定位对象 d:对象 k:位置数组 错误返回空undefined
 		if(!k)return d;
+		var x;
 		for(var i in k){
-			if(d){d = d[k[i]]}else{break}
+			if(d){x = d[k[i]]}else{break}
 		}
-		return d;
+		console.log(x)
+		return x;
 	},
 	
 	//*****************************************************************
