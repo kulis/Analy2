@@ -1,9 +1,0 @@
-<h1>{{_title}}</h1>
-<h6>源网址:<a href={{_url}}>{{_url}}</a></h6>
-<hr>
-<ul>
-	<li class="{{items}}">
-	<img src="{{items.img}}">
-	{{items.title}}
-	</li>
-</ul>
