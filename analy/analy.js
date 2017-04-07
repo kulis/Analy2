@@ -335,7 +335,7 @@ function _Analy(dom,p,getData){
 					}
 					
 					var	td = _valJson(d,pdx);
-					if(!pdx.del&&td!=='')t[pdx.id] = td;
+					if(!pdx.del)t[pdx.id] = td;
 				}
 				
 			r.items.push(t)
