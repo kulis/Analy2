@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="frame/bootstrap/css/bootstrap.min.css"/>
+<title>说明文档</title>
+<style>
+body{padding:5px 20px;}
+.thead{background-color:#ececec !important}
+.yz{color:#666}
+.md,.sm,.cs,.sl,.cssm{font-size:12px;width:1px;white-space:nowrap;}
+
+.md{color:#900}
+.sm{color:#444;width:auto}
+.cs{color:#36C}
+.cssm{color:#666;width:auto}
+.sl{color:#393}
+
+.csz{color:#36C; float:left; width:50px; text-align:right; border-bottom:dotted 1px; margin-right:5px;}
+td div{ padding-top:10px;}
+code strong{color:#3C0}
+code span{color:#aaa}
+</style>
+</head>
+<body>
+<h3>数组</h3>
+<table class="table table-bordered table-hover save">
+    <tr class="thead">
+        <th class="span1" colspan="100">数组</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">返回，数组或字符串</td>
+    </tr>
+    <tr>
+    	<td class="cs">参数</td>
+    	<td class="cssm">
+        	<span class="csz">默认</span>原值为数组，多个DOM对象，返回的值为数组；其它均返回字符串
+        	<div><span class="csz">合并</span>当值为数组时进行合并；附加<code>分隔符</code>设置</div>
+        	<div><span class="csz">数组</span>返回数组格式数据；附加<code>分隔符</code>时，先合并再转数组</div>
+        </td>
+    </tr>
+</table>
+<h3>方法说明</h3>
+<table class="table table-bordered table-hover save">
+    <tr class="thead">
+        <th class="span1" colspan="100">1.URL</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">转换为<code>标准URL</code>；该方法依赖<code>相对网址</code>，如该值为空则引用采集源地址。</td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100"><code class="yz">'/web/test.html'</code> ==> <code>'http://www.test.com/web/test.html'</code></td>
+    </tr>
+    <tr class="thead">
+        <th class="span1" colspan="100">2.数值</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">将字符串类数字值转换为<code>Number</code>数值。</td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100"><code class="yz">'55467'</code> ==> <code>55467</code></td>
+    </tr>
+    
+    <tr class="thead">
+        <th class="span1" colspan="100">3.布尔</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">值存在记录为<code>1</code>，不存在则不记录。</td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100">
+        <code class="yz">'test'</code> ==> <code>1</code>
+        <div><code class="yz">''</code> ==> 不记录</div>
+        </td>
+    </tr>
+    
+    <tr class="thead">
+        <th class="span1" colspan="100">4.长度</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">计算值的<code>字符长度</code>或<code>字节长度</code>。</td>
+    </tr>
+	<tr>
+    	<td class="cs">参数</td>
+    	<td class="cssm">
+        	<span class="csz">字符</span>获取值的字符数量
+        	<div><span class="csz">字节</span>获取值的字节数量，中文字符(全角)计为2个</div>
+        	<div><span class="csz">半全角</span>分别计算全角和半角字符数量，数组形式存储</div>
+        </td>
+    </tr>
+    
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100">
+        <code class="yz">'测试Abc'</code> 参数：字符 ==> <code>5</code>
+        <div><code class="yz">'测试Abc'</code> 参数：字节 ==> <code>7</code></div>
+        <div><code class="yz">'测试Abc'</code> 参数：半全角 ==> <code>[2,3]</code></div>
+        </td>
+    </tr>
+    
+    <tr class="thead">
+        <th class="span1" colspan="100">5.截取</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">截取值的指定长度</td>
+    </tr>
+	<tr>
+    	<td class="cs">参数1</td>
+    	<td class="cssm">
+        	截取字节长度设置，默认为<code>40</code>字节
+        </td>
+    </tr>
+	<tr>
+    	<td class="cs">参数2</td>
+    	<td class="cssm">
+        	当原始值超出设置范围，后的字符设置
+        </td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100">
+        <code class="yz">'测试Abcdefg'</code> 参数1：5 ==> <code>测试A</code>
+        <div><code class="yz">'测试Abcdefg'</code> 参数1：5，参数2：... ==> <code>测试A...</code></div>
+        </td>
+    </tr>
+    
+    <tr class="thead">
+        <th class="span1" colspan="100">6.属性组值</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">获取<code>URL属性</code>的值，进行新的组合值。</td>
+    </tr>
+	<tr>
+    	<td class="cs">参数</td>
+    	<td class="cssm">
+        	设置拼接的格式。<code><span>other</span><strong>(</strong>AAA<strong>&</strong>属性名<strong>&</strong>BBB<strong>)</strong><span>other</span></code>
+            <div>属性值，则不不存在返回括号内其它值</div>
+            <div><code>(AAA<strong>&</strong>属性名<strong>&</strong>BBB)</code>属性名居于2个&中间，括号内其它字符当属性值存在时候调用</div>
+            <div><code><strong>[</strong>&属性名&<strong>]</strong></code>中括号，可应许该属性为空</div>
+        </td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100">
+        <code class="yz">'/t?id=123456&name=gogo'</code> 参数#(&id&)# ==> <code>#123456#</code>
+        <div><code class="yz">'/t?id=123456&name=gogo'</code> 参数：#(&id&)#(&name&) ==> <code>#123456#gogo</code></div>
+        <div><code class="yz">'/t?id=123456&name=gogo'</code> 参数：#(&id&)#[A&name&B] ==> <code>#123456#AgogoB</code></div>
+        <div><code class="yz">'/t?id=123456'</code> 参数：#(&id&)#[A&name&B] ==> <code>#123456#</code></div>
+        <div><code class="yz">'/t?id=123456'</code> 参数：#(&id&)#(A&name&B) ==> <code>　</code></div>
+        </td>
+    </tr>
+    <tr class="thead">
+        <th class="span1" colspan="100">7.正则组值</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">获取<code>正则匹配</code>的值，进行新的组合值。基本方法等同于属性组值</td>
+    </tr>
+	<tr>
+    	<td class="cs">参数1</td>
+    	<td class="cssm">
+        	正则式，设置括号内的值在参数2里可以以序号来匹配。最多不超过10个括号
+        </td>
+    </tr>
+	<tr>
+    	<td class="cs">参数2</td>
+    	<td class="cssm">
+        	等同于属性组值设置，区别于取值
+            <div><code><strong>(</strong>&序号&<strong>)</strong></code>序号0代匹配全值，其它数值代表正则中的第几个括号</div>
+        </td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100">
+        <code class="yz">'123abc'</code> 参数1：(\d+)(a) 参数2：#(&1&)#(&2&)==> <code>#123#a</code>
+        <div><code class="yz">'123abc'</code> 参数1：(\d+)(a) 参数2：#(&0&)==> <code>#123a</code></div>
+        <div><code class="yz">'123abc'</code> 参数1：(\d+)(a) 参数2：#(&2&)(&1&)==> <code>#a123</code></div>
+        <div><code class="yz">'123'</code> 参数1：(\d+)(a)? 参数2：#(&2&)==> <code>　</code></div>
+        </td>
+    </tr>
+    <tr class="thead">
+        <th class="span1" colspan="100">8.时间</th>
+    </tr>
+	<tr>
+    	<td class="md">目的</td>
+    	<td class="sm" colspan="100">匹配获取内容中的时间，进行统一存储转换</td>
+	<tr>
+    	<td class="cs">参数1</td>
+    	<td class="cssm">
+        	设置输出格式。<code>Y - 年</code>、<code>U - 月</code>、<code>D - 日</code>、<code>H - 时</code>、<code>M - 分</code>、<code>S - 秒</code>、<code>X - 星期(中文)</code>、<code>Q - 星期(数字)</code>、<code>W - 星期(英文)</code>
+        </td>
+    </tr>
+	<tr>
+    	<td class="cs">参数2</td>
+    	<td class="cssm">
+        	时差设置。
+        </td>
+    </tr>
+	<tr>
+    	<td class="sl">实例</td>
+    	<td class="sm" colspan="100">
+        <code class="yz">'昨天 12:00'</code> ==> <code>1381393199993</code>
+        <div><code class="yz">'更新时间 12-12 12:55:58'</code> 参数1：Y-U-D ==> <code>2013-12-12</code></div>
+        <div><code class="yz">'更新时间 12-12 12:55:58'</code> 参数1：Y-U-D H:M 参数2：+8==> <code>2013-12-12 20:55</code></div>
+        <div><code class="yz">'3小时前'</code> 参数1：Y-U-D h:m==> <code>2013-12-12 9:55</code></div>
+        </td>
+    </tr>
+    </tr>
+</table>
+</body>
+</html>

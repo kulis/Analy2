@@ -1,0 +1,44 @@
+{
+	"name":"数据分析器 2.2",
+	"description":"2.2",
+	"version":"2.2",
+	"background":{
+		"scripts":[
+			"fun/basefun.js",
+			"analy/plug/getdate.js",
+			"analy/plug/itemsout.js",
+			"analy/plug/fanyi.js",
+			"analy/analy.js",
+			"base.js",
+			"taobao.js"],
+		"persistent":false
+	},
+	"manifest_version":2,
+	"browser_action":
+	{
+		"default_icon":"icon.png"
+	},
+	"icons":{
+		"16":"icon.png",
+		"19":"icon.png",
+		"48":"icon.png",
+		"128":"icon.png"
+	},
+	"permissions":[
+		"contextMenus",
+		"webNavigation",
+		"storage",
+		"tabs",
+		"http://*/",
+		"https://*/",
+		"chrome://favicon/",
+		"notifications",
+		"unlimitedStorage",
+		"tts",
+		"clipboardRead",
+		"clipboardWrite",
+		"pageCapture"
+	],
+	"content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self';",
+	"update_url": "http://clients2.google.com/service/update2/crx"
+}

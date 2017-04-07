@@ -1,0 +1,248 @@
+body{font-size:12px;padding:10px;font-family:"宋体";-webkit-user-select:none; overflow:scroll; min-height:1000px;}
+.bottom td,
+.head td{background-color:#f8f8f8 !important;}
+th,td{width:1px;white-space:nowrap; vertical-align:top !important;}
+td.auto{width:99%;}
+.add-on{font-size:12px !important;}
+.input-prepend{ margin-bottom:0;}
+div.czdiv{width:160px;}
+
+tr.head td.td_dom,tr.head:hover td.td_dom,
+tr.head td.td_filte,tr.head:hover td.td_filte
+{ background-color:#f2f2f2 !important}
+
+
+td :disabled{opacity:.65;}
+
+
+input{width:92%;font-family:Verdana, Geneva, sans-serif; margin:0 !important;color:#39F !important; font-size:12px !important; font-family:Verdana, Geneva, sans-serif;}
+select{font-size:12px !important; margin:0 !important;}
+
+
+.selectOn{ background-color:#dfe}
+.td_get .selectOn{ background-color:#Fee}
+.td_type .selectOn{ background-color:#Fea}
+.td_if .selectOn{ background-color:#999; color:#ff0}
+.td_if .selectOn option{color:#666}
+
+.selectOn option{ background-color:#fff}
+input.title{width:150px;color:#000 !important;}
+select.t{width:auto;}
+select.if{width:114px;}
+input.url{width:600px;color:#c00 !important;}
+input.items{width:268px;font-weight:900;}
+input.domain{width:268px;}
+
+input.name{width:50px;color:#000 !important;}
+input.id{width:73px;color:#f00 !important;}
+input.isdel.id{color:#777 !important;}
+input.o{display:none;}
+span.oSpan{ display:none; color:#CCC}
+
+input.dom{width:150px;}
+select.get{width:auto;}
+input.attr{width:70px; margin-left:5px !important;}
+input.filte{width:70px;}
+input.re0{width:120px;} .allre input.re0{width:330px;}
+input.re1{width:80px;}
+input.re2{width:15px;}
+select.arr{width:auto}
+input.fg{width:15px;}
+select.type{width:auto;}
+select.i2n{width:auto;}
+select._mode{width:auto;}
+input.note{width:auto;}
+input.fun{width:100px;}
+select.d{width:80px;}
+select.del{width:90px;}
+select.arr_item_del{width:90px;}
+select.arr_item_re{width:90px;}
+select.arr_item_sort{width:90px;}
+select.del_empty{width:90px;}
+select.del_empty_arr{width:100px;}
+
+
+select.sl{ width:85px;}
+select.tl{ width:85px;}
+select.dict{ width:85px;}
+label{font-size:12px !important;}
+
+.gaoliang{background-color:#fe0;}
+select.gaoliang option{background-color:#fff;}
+select.gaoliang .gaoliang{background-color:#fe0;}
+
+tr:hover td{background-color:#FFC !important;}
+tr.head:hover td
+{background-color:#f8f8f8 !important;}
+
+.czdiv {opacity:.35;}
+tr:hover .czdiv{opacity:.8;}
+.czdiv .tr_del{display:none; float:right; margin-right:15px;}
+.czdiv:hover .tr_del{display:inline}
+
+.btn-mini i{vertical-align:middle!important; }
+#set{margin-left:250px;width:auto; display:none;}
+.left{position:absolute; top:50px; width:240px; z-index:10000}
+.save{width:240px;}
+.save tbody input{display:none;width:80%;}
+.save tbody td{cursor:pointer;}
+.save tbody a{display:block;color:#666;}
+.save tbody a:hover{text-decoration:none}
+.save tbody td.edit input{display:block}
+.save tbody td.edit a{display:none}
+.save tbody td.this{background-color:#ffc;cursor:default}
+.save tbody td.this a{color:#333;}
+
+h1 {height:30px !important; font-family:"微软雅黑", "黑体"; font-size:22px; line-height:30px; margin:0 0 10px 0 !important;}
+#yulan{position:relative;display:none;}
+#title{
+	position:absolute; top:0; left:250px; padding:3px 8px; border-top-left-radius:5px;border-bottom-right-radius:5px;
+	background-color:#393;font-size:12px; color:#fff
+}
+
+.source #title{background-color:#04c;}
+#Canvas{margin-left:250px;-webkit-user-select:auto; }
+.CodeContainer{padding-top:40px;}
+
+.ondragenter{opacity:.3;}
+
+
+#u2i{margin-left:350px;width:auto; display:none;}
+
+#u2i .gz .input-prepend{ float:left; margin-right:15px;}
+
+.u2i0{width:auto;}
+.u2i1{width:auto;}
+
+.u2i11{width:250px;}
+.u2i12{width:20px;}
+.u2i13{width:20px;}
+
+.u2i21{width:80px;}
+.u2i22{width:73px;}
+
+.u2i31{width:80px;}
+
+.u2i3{width:auto;}
+
+#test{margin-left:250px; padding-bottom:10px;clear:both;}
+
+
+.id2url{width:43px;}
+
+.t1 .td_get,
+.t1 .td_attr,
+.t1 .td_filte,
+.t1 .td_data,
+.t1 select.d,
+.t1 .td_i2n,
+.t1 span.t0
+{display:none}
+
+.t0 span.t1
+{display:none}
+
+#clipboard{display:none;width:1px;height:1px;border:0;overflow:hidden;position:absolute; opacity:.01}
+#alert{padding:5px 12px;position:absolute; top:8px; left:260px; margin:0 auto; display:none}
+
+#alert button{margin-left:25px;}
+#alert button.cancel{margin-left:15px;}
+
+
+.yl{ float:right; margin-left:10px;}
+.ylID{ float:right; width:auto;  margin-left:10px;}
+
+
+#ylmbgl_div{ display:none; position:absolute; width:100%; height:100%; z-index:1000000; background:#fff; top:50px; left:0; font-family:Verdana, Geneva, sans-serif;}
+#ylmbgl_div td{ padding-left:10px;padding-right:0;}
+#ylmbgl_div input{width:50%}
+#ylmbgl_div textarea{width:94%; height:600px; overflow-y:scroll;}
+
+.inputip_warp{position:relative; display:inline}
+div.inputips{display:none; padding:5px 0; width:80px; top:19px; left:2px; position:absolute; background:#FFF; border:solid #ddd 1px; border-top:0; z-index:15}
+.td_get div.inputips{left:6px;}
+div.inputips a{line-height:20px; display:block; padding:2px 5px; cursor:default;}
+div.inputips a:hover{ color:#F30;background-color:#eee;}
+div.inputip_warp_re0 .inputips{ width:130px;}
+
+.tipno { border-radius:15px; background-color:#f33; position:absolute; top:5px; left:-19px;
+		 height:14px; width:14px; line-height:14px; text-align:center;
+		 font-size:10px; display:none;
+		 padding:2px; color:#FFF; z-index:10001;}
+
+body.hideleft #save{display:none}
+body.hideleft #set,
+body.hideleft #Canvas,
+body.hideleft #u2i,
+body.hideleft #test
+{margin-left:0px;}
+
+#set button.hideleft{display:none; margin-right:10px;}
+body.hideleft #set button.hideleft{display:inline}
+
+body.hideleft #title{left:10px;}
+
+tr[d='2'] .d{opacity:.65; color:#36F}
+tr[d='3'] .d{opacity:.65; color:#390}
+
+.d option{color:#666}
+.d option[value='1']{color:#666}
+.d option[value='2']{color:#36F}
+.d option[value='3']{color:#390}
+
+
+.td_fun{ border-left:0 !important; padding-left:0 !important}
+.td_fun input,.td_fun select{display:none}
+
+
+select.add{width:95px;}
+
+.t0 select.add{display:none}
+.add option{color:#888}
+tr[a='1'] .add,
+tr[a='2'] .add,
+tr[a='3'] .add,
+.add option[value='1'],
+.add option[value='2'],
+.add option[value='3']{color:#900}
+
+.t1 .onlyt0{display:none}
+
+tr[a='101'] .add,
+.add option[value='101'],
+tr[a='100'] .add,
+.add option[value='100']
+{color:#30c}
+
+
+td .add_fun{display:none}
+
+
+a.caozuo { cursor:pointer}
+.caozuo_filte{ float:right}
+
+ 
+ 
+.td_filte,.td_re,.td_arr,.td_arr_,
+.td_type,.td_fun,
+.td_fy,.td_data,.td_if
+{display:none;} 
+ 
+.show_filte .td_filte,.show_re .td_re,.show_arr .td_arr,.show_arr_ .td_arr_,
+.show_type .td_type,.show_type .td_fun,
+.show_fy .td_fy,.show_data .td_data,.show_if .td_if
+{display:table-cell}
+
+.show_filte .caozuo_filte,.show_re .caozuo_re,.show_arr .caozuo_arr,.show_arr_ .caozuo_arr_,
+.show_type .caozuo_type ,
+.show_fy .caozuo_fy,.show_data .caozuo_data,.show_if .caozuo_if
+{display:none;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
